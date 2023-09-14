@@ -43,9 +43,8 @@
 
     <script>
         document.getElementById("sampleForm").addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the default form submission behavior
+            event.preventDefault();
 
-            // Access form data using JavaScript
             const formData = new FormData(event.target);
             const formObject = {};
             
@@ -53,10 +52,10 @@
                 formObject[key] = value;
             });
 
-            // Display form data in the console
+            
             console.log(formObject);
 
-            // You can now process or send the form data to a server.
+            
         });
     </script>
 </body>
